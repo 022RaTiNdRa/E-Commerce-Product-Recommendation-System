@@ -1,135 +1,145 @@
-#🛒 E-Commerce Product Recommendation System
+# 🛒 E-Commerce Product Recommendation System (Big Data + Spark MLlib)
 
-An intelligent e-commerce product recommendation system that analyzes user behavior and product data to deliver personalized and relevant product suggestions.
+An end-to-end Big Data project that builds a personalized e-commerce product recommender using PySpark (ALS), powered by user–product interaction data and visualized through dashboards.
 
-============================================================
+--------------------------------------------------
 
-📌 OVERVIEW
+## 🚀 Project Overview
 
-Modern e-commerce platforms offer thousands of products, which can overwhelm users and reduce engagement.
+This project demonstrates scalable data engineering and machine learning skills by processing large-scale user behavior data and generating personalized recommendations using Apache Spark MLlib’s Alternating Least Squares (ALS) algorithm.
 
-This project implements a smart recommendation system that helps users discover relevant products by analyzing interaction data and product similarities. The system improves user experience, increases engagement, and demonstrates core recommendation system concepts used in real-world e-commerce platforms.
+It reflects real-world recommendation pipelines used by modern e-commerce platforms.
 
-============================================================
+--------------------------------------------------
 
-🎯 OBJECTIVES
+## 🎯 Key Objectives
 
-🎯 Provide personalized product recommendations
-🔍 Improve product discovery
-😊 Enhance user experience
-⏱ Reduce time spent searching for products
-📊 Demonstrate recommendation system concepts
+- 🛒 Build a personalized recommendation system for e-commerce products  
+- 📊 Analyze user behavior data (views, carts, purchases)  
+- ⚡ Leverage Spark for distributed data processing  
+- 🤖 Train a collaborative filtering model using ALS  
+- 📈 Visualize recommendations and insights  
 
-============================================================
+--------------------------------------------------
 
-✨ KEY FEATURES
+## ✨ Key Features
 
-🤖 Intelligent product recommendations  
-👤 User behavior and interaction analysis  
-🧮 Product similarity-based recommendations  
-⚡ Efficient data preprocessing  
-📈 Scalable design for large datasets  
+- 🤖 Personalized product recommendations  
+- ⚡ Distributed processing with Apache Spark  
+- 🧠 Collaborative filtering using Spark MLlib (ALS)  
+- 📊 Data analysis and insights  
+- 🌐 Dashboard-based visualization  
+- 📈 Scalable Big Data architecture  
 
-============================================================
+--------------------------------------------------
 
-🛠 TECHNOLOGIES USED
+## 🛠 Technologies Used
 
-🐍 Python  
-📊 Pandas and NumPy  
-🧠 Scikit-learn  
-📁 CSV-based datasets  
-📈 Data analysis and preprocessing techniques  
+- 🐍 Python  
+- ⚡ Apache Spark (PySpark)  
+- 🧠 Spark MLlib  
+- 📊 Pandas and NumPy  
+- 🌐 Streamlit  
+- 📁 CSV / structured datasets  
 
-============================================================
+--------------------------------------------------
 
-⚙ HOW IT WORKS
+## ⚙ How the System Works
 
-1️⃣ User and product data are collected  
-2️⃣ Data is cleaned and preprocessed  
-3️⃣ Recommendation logic is applied  
-4️⃣ Relevant products are identified  
-5️⃣ Personalized recommendations are generated  
+1. 📥 User–product interaction data is collected  
+2. 🧹 Data is cleaned and preprocessed  
+3. ⚡ Data is processed using Spark  
+4. 🤖 ALS model is trained  
+5. 🔎 Personalized recommendations are generated  
+6. 📊 Results are visualized  
 
-============================================================
+--------------------------------------------------
 
-📁 PROJECT STRUCTURE
+## 📁 Project Structure
 
-E-Commerce-Product-Recommendation-System
-data        -> product and user datasets
-notebooks   -> data exploration and experiments
-src         -> recommendation logic
-outputs     -> generated recommendation results
-requirements.txt -> project dependencies
-README.md   -> documentation
+- data — raw and processed datasets  
+- notebooks — data exploration and experiments  
+- src — preprocessing and model training code  
+- dashboard — Streamlit application  
+- outputs — generated recommendations  
+- requirements.txt — dependencies  
+- README.md — documentation  
 
-============================================================
+--------------------------------------------------
 
-⚙ INSTALLATION
+## ⚙ Installation
 
-PREREQUISITES
-✔ Python 3.8 or higher  
-✔ pip package manager  
+### Prerequisites
+- Python 3.8 or higher  
+- Apache Spark installed  
+- pip package manager  
 
-SETUP STEPS
+### Setup Steps
 
-git clone https://github.com/022RaTiNdRa/E-Commerce-Product-Recommendation-System.git
-cd E-Commerce-Product-Recommendation-System
-pip install -r requirements.txt
+Run the following commands in order:
 
-============================================================
+git clone https://github.com/022RaTiNdRa/E-Commerce-Product-Recommendation-System.git  
+cd E-Commerce-Product-Recommendation-System  
+pip install -r requirements.txt  
 
-▶ USAGE
+--------------------------------------------------
 
-Run the main program using the command below:
+## ▶ Usage
 
-python main.py
+### Train the Recommendation Model
 
-The system will:
-📊 Analyze user and product data  
-🤖 Generate personalized recommendations  
-💾 Display or save recommendation results  
+spark-submit src/train_model.py  
 
-============================================================
+### Run the Dashboard
 
-📈 APPLICATIONS
+streamlit run dashboard/app.py  
 
-🛒 Online shopping platforms  
-🎯 Product discovery systems  
-📢 Personalized marketing  
-👥 Customer behavior analysis  
-🧠 Recommendation system learning projects  
+You can:
+- 📊 Explore user and product insights  
+- 🛒 View personalized recommendations  
+- 📈 Analyze model outputs  
 
-============================================================
+--------------------------------------------------
 
-🔮 FUTURE ENHANCEMENTS
+## 📈 Applications
 
-🤖 Machine learning-based recommendation models  
-👥 Collaborative filtering  
-🔀 Hybrid recommendation systems  
-🌐 Web-based user interface  
-⚡ Real-time recommendation updates  
+- 🛒 Large-scale e-commerce platforms  
+- 🎯 Personalized marketing systems  
+- 📊 Customer behavior analytics  
+- 🧠 Recommendation system research  
+- 💼 Data Engineering and ML portfolios  
 
-============================================================
+--------------------------------------------------
 
-🤝 CONTRIBUTING
+## 🔮 Future Enhancements
+
+- 🔀 Hybrid recommendation models  
+- 🧠 Deep learning-based recommenders  
+- ☁ Cloud deployment  
+- 📊 Real-time recommendation pipelines  
+- 🔔 Event-driven recommendations  
+
+--------------------------------------------------
+
+## 🤝 Contributing
 
 Contributions are welcome.
 
-1️⃣ Fork the repository  
-2️⃣ Create a feature branch  
-3️⃣ Commit your changes  
-4️⃣ Push to your branch  
-5️⃣ Open a Pull Request  
+1. Fork the repository  
+2. Create a feature branch  
+3. Commit your changes  
+4. Push to your branch  
+5. Open a Pull Request  
 
-============================================================
+--------------------------------------------------
 
-📜 LICENSE
+## 📜 License
 
 This project is licensed under the MIT License.
 
-============================================================
+--------------------------------------------------
 
-📬 CONTACT
+## 📬 Contact
 
 For questions or suggestions, please open an issue on GitHub.
 
